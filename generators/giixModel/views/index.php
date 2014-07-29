@@ -60,7 +60,7 @@ $('.form .row.model-class').toggle($('#{$class}_tableName').val().substring($('#
 			'options'=>array(
 				'delay'=>100,
 				'focus'=>'js:function(event,ui){
-					$(this).val($(ui.item).val());
+					$(this).val(ui.item.value);
 					$(this).trigger(\'change\');
 				}',
 			),
